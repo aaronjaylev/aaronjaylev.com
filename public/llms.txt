@@ -1,0 +1,23 @@
+# LLMS.txt - AI and LLM Crawler Directives
+# This file provides guidance for AI crawlers and language model training
+
+User-agent: CCBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: *
+Allow: /
