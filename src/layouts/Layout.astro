@@ -3,9 +3,10 @@ import '../styles/global.css';
 
 interface Props {
 	title: string;
+	description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +18,7 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Aaron Jay Lev</title>
+		<meta name="description" content={description || "Aaron Jay Lev Consulting - AI automation, web development, and business consulting with 20+ years of experience. Generate leads and scale your business."} />
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H8RKFXRHP"></script>
 		<script>
