@@ -17,8 +17,18 @@ const { title, description } = Astro.props;
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title} | Aaron Jay Lev</title>
-		<meta name="description" content={description || "Aaron Jay Lev Consulting - AI automation, web development, and business consulting with 20+ years of experience. Generate leads and scale your business."} />
+		<title>{title} | Aaron Jay Lev - Full Stack AI Engineer</title>
+		<meta name="description" content={description || "Full Stack AI Engineer with 20+ years of experience building scalable web platforms and AI automation systems. Expert in React, Node.js, Claude API, and healthcare SaaS. Founder of Lev Tech Corporation."} />
+		<meta property="og:title" content={`${title} | Aaron Jay Lev - Full Stack AI Engineer`} />
+		<meta property="og:description" content={description || "Full Stack AI Engineer with 20+ years of experience building scalable web platforms and AI automation systems. Expert in React, Node.js, Claude API, and healthcare SaaS."} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://aaronjaylev.com" />
+		<meta property="og:image" content="https://aaronjaylev.com/img/aaron-lev-headshot.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={`${title} | Aaron Jay Lev - Full Stack AI Engineer`} />
+		<meta name="twitter:description" content={description || "Full Stack AI Engineer with 20+ years of experience building scalable web platforms and AI automation systems."} />
+		<meta name="twitter:image" content="https://aaronjaylev.com/img/aaron-lev-headshot.jpg" />
+		<link rel="canonical" href="https://aaronjaylev.com" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -26,13 +36,80 @@ const { title, description } = Astro.props;
 		<link rel="manifest" href="/site.webmanifest">
 				
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H8RKFXRHP"></script>
-		<script>
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6H8RKFXRHP"></script>
+		<script is:inline>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-6H8RKFXRHP');
+		</script>
+
+		<!-- Schema.org Structured Data -->
+		<script is:inline type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "name": "Aaron Jay Lev",
+		  "url": "https://aaronjaylev.com",
+		  "image": "https://aaronjaylev.com/img/aaron-lev-headshot.jpg",
+		  "email": "aaronjaylev@gmail.com",
+		  "telephone": "+1-561-239-6941",
+		  "jobTitle": "Senior Full Stack AI Engineer",
+		  "worksFor": {
+		    "@type": "Organization",
+		    "name": "Lev Tech Corporation",
+		    "url": "https://levtechcorp.com"
+		  },
+		  "sameAs": [
+		    "https://www.linkedin.com/in/aaronjaylev",
+		    "https://github.com/aaronjaylev",
+		    "https://x.com/aaronjaylev"
+		  ],
+		  "knowsAbout": [
+		    "Full Stack Development",
+		    "AI Engineering",
+		    "Claude API",
+		    "React",
+		    "Node.js",
+		    "TypeScript",
+		    "Healthcare SaaS",
+		    "AI Automation",
+		    "Lead Generation",
+		    "PostgreSQL",
+		    "Astro",
+		    "Next.js"
+		  ],
+		  "hasOccupation": {
+		    "@type": "Occupation",
+		    "name": "Software Engineer",
+		    "qualifications": "BS Computer Science, University of Maryland College Park"
+		  },
+		  "award": "US Patent 7,916,844 - System and Method to Determine and Deliver Quotes for Distance Sensitive Communication Links"
+		}
+		</script>
+
+		<script is:inline type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "name": "Lev Tech Corporation",
+		  "url": "https://levtechcorp.com",
+		  "founder": {
+		    "@type": "Person",
+		    "name": "Aaron Jay Lev"
+		  },
+		  "knowsAbout": [
+		    "AI Automation",
+		    "Lead Generation Systems",
+		    "Healthcare Marketing",
+		    "Web Development",
+		    "SaaS Solutions"
+		  ],
+		  "sameAs": [
+		    "https://levtechcorp.com"
+		  ]
+		}
 		</script>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
