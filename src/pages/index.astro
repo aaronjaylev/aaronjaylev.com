@@ -14,24 +14,24 @@ import Layout from '../layouts/Layout.astro';
 				<!-- Left: Text Content -->
 				<div class="text-center md:text-left">
 					<div class="inline-block mb-6 px-4 py-2 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur">
-						<span class="text-purple-300 text-sm font-medium">Welcome to my portfolio</span>
+						<span class="text-purple-300 text-sm font-medium">AI-Powered Full-Stack Engineer</span>
 					</div>
 					<h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-						Craft Digital
+						Full Stack AI
 						<span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-							Experiences
+							Engineering
 						</span>
 					</h1>
 					<p class="text-lg md:text-xl text-slate-300 mb-12 leading-relaxed">
-						I build modern, scalable web applications that solve real problems. Full-stack engineer passionate about clean code and beautiful design.
+						Senior software engineer with 20+ years building scalable web platforms and AI automation systems. Specialized in healthcare, fintech, and marketing automation. Proven track record driving 6x revenue growth and serving 4M+ users.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
-						<button class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition transform hover:scale-105">
+						<a href="#projects" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition transform hover:scale-105 inline-block">
 							View My Work
-						</button>
-						<button class="px-8 py-3 border border-slate-600 text-slate-200 font-semibold rounded-lg hover:border-purple-500 hover:text-purple-400 transition">
+						</a>
+						<a href="/Aaron-Jay-Lev-Resume-2026-july-25.pdf" download class="px-8 py-3 border border-slate-600 text-slate-200 font-semibold rounded-lg hover:border-purple-500 hover:text-purple-400 transition inline-block">
 							Download Resume
-						</button>
+						</a>
 					</div>
 				</div>
 
@@ -59,7 +59,7 @@ import Layout from '../layouts/Layout.astro';
 		<div class="max-w-6xl mx-auto">
 			<div class="text-center mb-16">
 				<h2 class="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
-				<p class="text-slate-400 text-lg">Showcasing some of my recent work and explorations</p>
+				<p class="text-slate-400 text-lg">Building scalable platforms and AI automation systems</p>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -67,18 +67,21 @@ import Layout from '../layouts/Layout.astro';
 				<div class="group relative rounded-2xl border border-slate-700 bg-slate-900/50 backdrop-blur hover:border-purple-500 transition overflow-hidden">
 					<div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition"></div>
 					<div class="relative p-8">
-						<div class="w-12 h-12 mb-4 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-							<span class="text-xl">🚀</span>
-						</div>
-						<h3 class="text-2xl font-bold mb-2">Project Alpha</h3>
-						<p class="text-slate-400 mb-6">A lightning-fast SaaS application built with React and Node.js that helps teams collaborate in real-time with 99.9% uptime.</p>
+						<h3 class="text-2xl font-bold mb-2 flex items-center gap-3"><a href="https://regence.com" target="_blank" class="hover:text-purple-400 transition flex items-center gap-3"><img src="/screenshots/regence-logo.png" alt="Regence" class="h-8 w-auto" />Regence HIPAA-Compliant Portal</a></h3>
+						<p class="text-slate-400 mb-6">Secure healthcare portal serving 4M+ members with SSO integration, advanced payment processing, and HIPAA compliance. Architected with React, Node.js, and enterprise-grade security protocols.</p>
 						<div class="flex flex-wrap gap-2 mb-6">
 							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">React</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300 border border-purple-500/30">TypeScript</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-pink-500/20 text-pink-300 border border-pink-500/30">PostgreSQL</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">React Native</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">TypeScript</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300 border border-purple-500/30">Node.js</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300 border border-purple-500/30">Express.js</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">PostgreSQL</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">Tailwind</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-pink-500/20 text-pink-300 border border-pink-500/30">HIPAA Compliance</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-green-500/20 text-green-300 border border-green-500/30">Accessibility</span>
 						</div>
-						<a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition">
-							View Project →
+						<a href="https://regence.com" target="_blank" class="inline-block overflow-hidden rounded-xl border border-slate-600 hover:border-purple-500 transition">
+							<img src="/screenshots/regence.jpg" alt="Regence Healthcare Portal" class="w-full h-auto object-cover hover:scale-105 transition" />
 						</a>
 					</div>
 				</div>
@@ -87,18 +90,21 @@ import Layout from '../layouts/Layout.astro';
 				<div class="group relative rounded-2xl border border-slate-700 bg-slate-900/50 backdrop-blur hover:border-purple-500 transition overflow-hidden">
 					<div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition"></div>
 					<div class="relative p-8">
-						<div class="w-12 h-12 mb-4 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
-							<span class="text-xl">⚡</span>
-						</div>
-						<h3 class="text-2xl font-bold mb-2">Analytics Dashboard</h3>
-						<p class="text-slate-400 mb-6">Real-time analytics platform providing actionable insights to over 10,000+ businesses with interactive visualizations.</p>
+						<h3 class="text-2xl font-bold mb-2 flex items-center gap-3"><a href="https://levtechcorp.com/" target="_blank" class="hover:text-purple-400 transition flex items-center gap-3"><img src="/screenshots/Lev-Tech-Corp-Logo.png" alt="Lev Tech Corp" class="h-8 w-auto" />Lev Tech Corp AI Automation</a></h3>
+						<p class="text-slate-400 mb-6">Built multi-channel AI automation systems using Claude/ChatGPT APIs, n8n, and Zapier. Achieved 6x increase in consultations and 80% reduction in manual outreach time for healthcare clients.</p>
 						<div class="flex flex-wrap gap-2 mb-6">
-							<span class="px-3 py-1 rounded-full text-sm bg-green-500/20 text-green-300 border border-green-500/30">D3.js</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">Next.js</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">Python</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-green-500/20 text-green-300 border border-green-500/30">Claude API</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">Automation</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">n8n/Zapier</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-red-500/20 text-red-300 border border-red-500/30">Twilio</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300 border border-purple-500/30">GoHighLevel</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-orange-500/20 text-orange-300 border border-orange-500/30">Mailgun</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">Astro</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-green-500/20 text-green-300 border border-green-500/30">SEO</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-green-500/20 text-green-300 border border-green-500/30">AEO</span>
 						</div>
-						<a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition">
-							View Project →
+						<a href="https://levtechcorp.com/" target="_blank" class="inline-block overflow-hidden rounded-xl border border-slate-600 hover:border-purple-500 transition">
+							<img src="/screenshots/Lev-Tech-Corp-website.jpg" alt="Lev Tech Corp Website" class="w-full h-auto object-cover hover:scale-105 transition" />
 						</a>
 					</div>
 				</div>
@@ -108,17 +114,17 @@ import Layout from '../layouts/Layout.astro';
 					<div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition"></div>
 					<div class="relative p-8">
 						<div class="w-12 h-12 mb-4 rounded-lg bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-							<span class="text-xl">🎨</span>
+							<span class="text-xl">💰</span>
 						</div>
-						<h3 class="text-2xl font-bold mb-2">Design System</h3>
-						<p class="text-slate-400 mb-6">Comprehensive open-source design system and component library used by companies to accelerate their UI development.</p>
+						<h3 class="text-2xl font-bold mb-2">EvoPages CMS Platform</h3>
+						<p class="text-slate-400 mb-6">Created a database-driven CMS enabling marketing teams to build conversion-focused websites without coding. Scaled to power 2,000+ websites across healthcare and e-commerce verticals.</p>
 						<div class="flex flex-wrap gap-2 mb-6">
-							<span class="px-3 py-1 rounded-full text-sm bg-orange-500/20 text-orange-300 border border-orange-500/30">Storybook</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">CSS</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-red-500/20 text-red-300 border border-red-500/30">Figma</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-orange-500/20 text-orange-300 border border-orange-500/30">Full-Stack</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Database Design</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-red-500/20 text-red-300 border border-red-500/30">SaaS</span>
 						</div>
 						<a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition">
-							View Project →
+							Learn more →
 						</a>
 					</div>
 				</div>
@@ -128,17 +134,17 @@ import Layout from '../layouts/Layout.astro';
 					<div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition"></div>
 					<div class="relative p-8">
 						<div class="w-12 h-12 mb-4 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
-							<span class="text-xl">🔧</span>
+							<span class="text-xl">🛒</span>
 						</div>
-						<h3 class="text-2xl font-bold mb-2">DevTools CLI</h3>
-						<p class="text-slate-400 mb-6">Command-line tool that streamlines development workflows, reducing deployment time by 60% for distributed teams.</p>
+						<h3 class="text-2xl font-bold mb-2">Organifi Shopify Optimization</h3>
+						<p class="text-slate-400 mb-6">Optimized checkout flow and payment processing for high-volume e-commerce platform. Contributed to $100K+ daily revenue through conversion rate optimization and UX improvements.</p>
 						<div class="flex flex-wrap gap-2 mb-6">
-							<span class="px-3 py-1 rounded-full text-sm bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Go</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">Bash</span>
-							<span class="px-3 py-1 rounded-full text-sm bg-slate-500/20 text-slate-300 border border-slate-500/30">Docker</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Shopify</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300 border border-blue-500/30">CRO</span>
+							<span class="px-3 py-1 rounded-full text-sm bg-slate-500/20 text-slate-300 border border-slate-500/30">E-Commerce</span>
 						</div>
 						<a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition">
-							View Project →
+							Learn more →
 						</a>
 					</div>
 				</div>
@@ -151,7 +157,7 @@ import Layout from '../layouts/Layout.astro';
 		<div class="max-w-6xl mx-auto">
 			<div class="text-center mb-16">
 				<h2 class="text-4xl md:text-5xl font-bold mb-4">Tech Stack & Skills</h2>
-				<p class="text-slate-400 text-lg">Tools and technologies I work with daily</p>
+				<p class="text-slate-400 text-lg">Full-stack expertise across frontend, backend, AI, and cloud infrastructure</p>
 			</div>
 
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -176,24 +182,24 @@ import Layout from '../layouts/Layout.astro';
 					<p class="text-sm text-slate-400 mt-1">Database</p>
 				</div>
 				<div class="rounded-xl border border-slate-700 bg-slate-900/50 p-6 text-center hover:border-blue-500 transition">
-					<div class="text-3xl mb-3">🔵</div>
-					<h3 class="font-semibold text-slate-100">GraphQL</h3>
-					<p class="text-sm text-slate-400 mt-1">API</p>
+					<div class="text-3xl mb-3">🤖</div>
+					<h3 class="font-semibold text-slate-100">Claude & ChatGPT APIs</h3>
+					<p class="text-sm text-slate-400 mt-1">AI Integration</p>
 				</div>
 				<div class="rounded-xl border border-slate-700 bg-slate-900/50 p-6 text-center hover:border-blue-500 transition">
-					<div class="text-3xl mb-3">🐳</div>
-					<h3 class="font-semibold text-slate-100">Docker & K8s</h3>
-					<p class="text-sm text-slate-400 mt-1">DevOps</p>
+					<div class="text-3xl mb-3">⚙️</div>
+					<h3 class="font-semibold text-slate-100">n8n & Zapier</h3>
+					<p class="text-sm text-slate-400 mt-1">Automation</p>
 				</div>
 				<div class="rounded-xl border border-slate-700 bg-slate-900/50 p-6 text-center hover:border-blue-500 transition">
-					<div class="text-3xl mb-3">⚡</div>
-					<h3 class="font-semibold text-slate-100">AWS</h3>
-					<p class="text-sm text-slate-400 mt-1">Cloud</p>
+					<div class="text-3xl mb-3">🚀</div>
+					<h3 class="font-semibold text-slate-100">Astro & Next.js</h3>
+					<p class="text-sm text-slate-400 mt-1">Modern Frameworks</p>
 				</div>
 				<div class="rounded-xl border border-slate-700 bg-slate-900/50 p-6 text-center hover:border-blue-500 transition">
-					<div class="text-3xl mb-3">🎨</div>
-					<h3 class="font-semibold text-slate-100">Tailwind CSS</h3>
-					<p class="text-sm text-slate-400 mt-1">Styling</p>
+					<div class="text-3xl mb-3">☁️</div>
+					<h3 class="font-semibold text-slate-100">AWS & Vercel</h3>
+					<p class="text-sm text-slate-400 mt-1">Cloud Deployment</p>
 				</div>
 			</div>
 		</div>
@@ -204,20 +210,55 @@ import Layout from '../layouts/Layout.astro';
 		<div class="max-w-6xl mx-auto">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 				<div class="text-center">
-					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">50+</div>
-					<p class="text-slate-400 mt-2">Projects Completed</p>
-				</div>
-				<div class="text-center">
-					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">8+</div>
+					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">20+</div>
 					<p class="text-slate-400 mt-2">Years Experience</p>
 				</div>
 				<div class="text-center">
-					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text">15+</div>
-					<p class="text-slate-400 mt-2">Clients Served</p>
+					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">4M+</div>
+					<p class="text-slate-400 mt-2">Users Served</p>
 				</div>
 				<div class="text-center">
-					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text">100%</div>
-					<p class="text-slate-400 mt-2">Satisfaction Rate</p>
+					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text">7x</div>
+					<p class="text-slate-400 mt-2">Target ROI</p>
+				</div>
+				<div class="text-center">
+					<div class="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text">200+</div>
+					<p class="text-slate-400 mt-2">Astro/Node Sites Built</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Education Section -->
+	<section class="py-20 px-4 bg-slate-900/30 border-y border-slate-800">
+		<div class="max-w-6xl mx-auto">
+			<div class="text-center mb-16">
+				<h2 class="text-4xl md:text-5xl font-bold mb-4">Education & Certifications</h2>
+				<p class="text-slate-400 text-lg">Strong foundation in computer science and continuous learning</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+				<div class="rounded-xl border border-slate-700 bg-slate-900/50 p-8">
+					<div class="flex items-start gap-4">
+						<div class="text-3xl">🎓</div>
+						<div class="flex-1">
+							<h3 class="text-xl font-bold mb-2">Bachelor of Science, Computer Science</h3>
+							<p class="text-purple-400 font-semibold mb-2">University of Maryland, College Park</p>
+							<p class="text-slate-400 text-sm">Focus: User Interfaces, Database Design, Enterprise Development</p>
+							<p class="text-slate-400 text-sm">Minor: Marketing & Business Management</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="rounded-xl border border-slate-700 bg-slate-900/50 p-8">
+					<div class="flex items-start gap-4">
+						<div class="text-3xl">🏆</div>
+						<div class="flex-1">
+							<h3 class="text-xl font-bold mb-2">Patents & Publications</h3>
+							<p class="text-slate-400 text-sm mb-2"><a href="https://patents.google.com/patent/US7916844" target="_blank" class="text-purple-400 hover:text-purple-300 transition"><strong>US Patent 7,916,844:</strong></a> System and Method to Determine and Deliver Quotes for Distance Sensitive Communication Links</p>
+							<p class="text-slate-400 text-sm"><strong>Published Author:</strong> Multiple books on eCommerce, medical marketing, and entrepreneurship</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -227,15 +268,15 @@ import Layout from '../layouts/Layout.astro';
 	<section id="contact" class="py-20 px-4">
 		<div class="max-w-4xl mx-auto">
 			<div class="rounded-2xl border border-purple-500/30 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur p-12 text-center">
-				<h2 class="text-4xl font-bold mb-4">Ready to work together?</h2>
-				<p class="text-lg text-slate-300 mb-8">Let's discuss your next project and bring your ideas to life.</p>
+				<h2 class="text-4xl font-bold mb-4">Let's Build Something Great Together</h2>
+				<p class="text-lg text-slate-300 mb-8">I'm available for AI engineering roles and ambitious full-stack projects. Let's discuss how I can drive impact for your team.</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<button class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition transform hover:scale-105">
-						Start a Project
-					</button>
-					<button class="px-8 py-3 border border-slate-600 text-slate-200 font-semibold rounded-lg hover:border-purple-500 hover:text-purple-400 transition">
+					<a href="https://linkedin.com/in/aaronjaylev" target="_blank" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition transform hover:scale-105 inline-block">
+						Connect on LinkedIn
+					</a>
+					<a href="mailto:aaronjaylev@gmail.com" class="px-8 py-3 border border-slate-600 text-slate-200 font-semibold rounded-lg hover:border-purple-500 hover:text-purple-400 transition inline-block">
 						Send me an Email
-					</button>
+					</a>
 				</div>
 			</div>
 		</div>
