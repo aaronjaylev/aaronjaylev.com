@@ -1,5 +1,7 @@
 {
   "name": "aaronjaylev.com",
+  "description": "Source for aaronjaylev.com, a static resume site built with Astro and Tailwind CSS",
+  "private": true,
   "type": "module",
   "version": "0.0.1",
   "engines": {
