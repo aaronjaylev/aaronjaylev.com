@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { person } from '../config/site';
+
+const lastUpdated = 'October 10, 2026';
+---
+
+<Layout title="DMCA Notice" description="How to report copyright infringement on aaronjaylev.com under the Digital Millennium Copyright Act.">
+	<main class="max-w-3xl mx-auto px-4 py-20">
+		<h1 class="text-4xl md:text-5xl font-bold mb-4">DMCA Notice</h1>
+		<p class="text-slate-400 mb-12">Last updated: {lastUpdated}</p>
+
+		<div class="space-y-10 text-slate-300 leading-relaxed">
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Respecting Copyright</h2>
+				<p>
+					I respect the intellectual property rights of others. If you believe that material on aaronjaylev.com (the "Site") infringes your copyright, you can notify me under the Digital Millennium Copyright Act of 1998 (17 U.S.C. § 512, the "DMCA"). The Site does not accept user-submitted content, so all material on it is published by me.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Designated Copyright Agent</h2>
+				<p>
+					Send DMCA notices to my designated agent:
+				</p>
+				<address class="not-italic mt-4 p-6 rounded-xl border border-slate-700 bg-slate-900/50">
+					{person.name}<br />
+					Designated DMCA Agent<br />
+					Email: <a href={`mailto:${person.email}?subject=DMCA%20Notice`} class="text-purple-400 hover:text-purple-300 transition">{person.email}</a>
+				</address>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">What Your Notice Must Include</h2>
+				<p>To be effective, a notice should include all of the following:</p>
+				<ol class="list-decimal pl-6 space-y-3 mt-4">
+					<li>A physical or electronic signature of the copyright owner or a person authorized to act on their behalf.</li>
+					<li>Identification of the copyrighted work you claim has been infringed, or, if multiple works are covered, a representative list of them.</li>
+					<li>Identification of the material on the Site that you claim is infringing, with enough detail (such as the page address) for me to find it.</li>
+					<li>Your name, mailing address, telephone number, and email address.</li>
+					<li>A statement that you have a good-faith belief that the use is not authorized by the copyright owner, its agent, or the law.</li>
+					<li>A statement that the information in the notice is accurate and, under penalty of perjury, that you are the copyright owner or are authorized to act on the owner's behalf.</li>
+				</ol>
+				<p class="mt-4">
+					Under 17 U.S.C. § 512(f), a person who knowingly misrepresents that material is infringing may be liable for damages. Please consider whether fair use or another exception applies before sending a notice.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">What Happens Next</h2>
+				<p>
+					When I receive a notice that contains the required information, I will review it and, if the claim is valid, remove or disable access to the material. I will try to notify the person who posted it. If I remove material in response to a notice, I will tell you the result.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Counter-Notice</h2>
+				<p>
+					If you believe material was removed by mistake, you may send a counter-notice to my designated agent. It must include your name, address, telephone number, and email address; identification of the removed material and where it appeared before removal; a statement under penalty of perjury that you believe the material was removed through mistake or misidentification; and your consent to the jurisdiction of the federal court for your district, with a statement that you will accept service of process from the original complainant.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Repeat Infringers</h2>
+				<p>
+					It is my policy to terminate, in appropriate circumstances, the access of any person who is found to be a repeat infringer.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Changes to This Notice</h2>
+				<p>
+					I may update this page from time to time. The "Last updated" date at the top shows when it was last changed.
+				</p>
+			</section>
+		</div>
+	</main>
+</Layout>

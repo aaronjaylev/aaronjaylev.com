@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import { person, socialLinks, websiteRepo } from '../config/site';
+import SocialIcon from '../components/SocialIcon.astro';
 
 interface Props {
 	title: string;
@@ -7,6 +9,43 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const personSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	name: person.name,
+	url: 'https://aaronjaylev.com',
+	image: 'https://aaronjaylev.com/img/aaron-lev-headshot.jpg',
+	email: person.email,
+	telephone: person.phone,
+	jobTitle: 'Senior Full Stack AI Engineer',
+	worksFor: {
+		'@type': 'Organization',
+		name: 'Lev Tech Corporation',
+		url: 'https://levtechcorp.com',
+	},
+	sameAs: [socialLinks.linkedin, socialLinks.github, socialLinks.x, socialLinks.facebook],
+	knowsAbout: [
+		'Full Stack Development',
+		'AI Engineering',
+		'Claude API',
+		'React',
+		'Node.js',
+		'TypeScript',
+		'Healthcare SaaS',
+		'AI Automation',
+		'Lead Generation',
+		'PostgreSQL',
+		'Astro',
+		'Next.js',
+	],
+	hasOccupation: {
+		'@type': 'Occupation',
+		name: 'Software Engineer',
+		qualifications: 'BS Computer Science, University of Maryland College Park',
+	},
+	award: 'US Patent 7,916,844 - System and Method to Determine and Deliver Quotes for Distance Sensitive Communication Links',
+};
 ---
 
 <!doctype html>
@@ -34,7 +73,7 @@ const { title, description } = Astro.props;
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
-				
+
 		<!-- Google tag (gtag.js) -->
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6H8RKFXRHP"></script>
 		<script is:inline>
@@ -46,48 +85,7 @@ const { title, description } = Astro.props;
 		</script>
 
 		<!-- Schema.org Structured Data -->
-		<script is:inline type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "Person",
-		  "name": "Aaron Jay Lev",
-		  "url": "https://aaronjaylev.com",
-		  "image": "https://aaronjaylev.com/img/aaron-lev-headshot.jpg",
-		  "email": "aaronjaylev@gmail.com",
-		  "telephone": "+1-561-239-6941",
-		  "jobTitle": "Senior Full Stack AI Engineer",
-		  "worksFor": {
-		    "@type": "Organization",
-		    "name": "Lev Tech Corporation",
-		    "url": "https://levtechcorp.com"
-		  },
-		  "sameAs": [
-		    "https://www.linkedin.com/in/aaronjaylev",
-		    "https://github.com/aaronjaylev",
-		    "https://x.com/aaronjaylev"
-		  ],
-		  "knowsAbout": [
-		    "Full Stack Development",
-		    "AI Engineering",
-		    "Claude API",
-		    "React",
-		    "Node.js",
-		    "TypeScript",
-		    "Healthcare SaaS",
-		    "AI Automation",
-		    "Lead Generation",
-		    "PostgreSQL",
-		    "Astro",
-		    "Next.js"
-		  ],
-		  "hasOccupation": {
-		    "@type": "Occupation",
-		    "name": "Software Engineer",
-		    "qualifications": "BS Computer Science, University of Maryland College Park"
-		  },
-		  "award": "US Patent 7,916,844 - System and Method to Determine and Deliver Quotes for Distance Sensitive Communication Links"
-		}
-		</script>
+		<script is:inline type="application/ld+json" set:html={JSON.stringify(personSchema)}></script>
 
 		<script is:inline type="application/ld+json">
 		{
@@ -137,9 +135,9 @@ const { title, description } = Astro.props;
 						Aaron Jay Lev
 					</a>
 					<div class="flex gap-8 items-center">
-						<a href="#projects" class="text-slate-300 hover:text-blue-400 transition">Projects</a>
-						<a href="#skills" class="text-slate-300 hover:text-blue-400 transition">Skills</a>
-						<a href="#contact" class="text-slate-300 hover:text-blue-400 transition">Contact</a>
+						<a href="/#projects" class="text-slate-300 hover:text-blue-400 transition">Projects</a>
+						<a href="/#skills" class="text-slate-300 hover:text-blue-400 transition">Skills</a>
+						<a href="/#contact" class="text-slate-300 hover:text-blue-400 transition">Contact</a>
 						<button class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition">
 							Get in Touch
 						</button>
@@ -160,18 +158,23 @@ const { title, description } = Astro.props;
 					<div>
 						<h4 class="font-semibold mb-4 text-slate-200">Links</h4>
 						<ul class="space-y-2 text-sm text-slate-400">
-							<li><a href="#" class="hover:text-blue-400 transition">GitHub</a></li>
-							<li><a href="#" class="hover:text-blue-400 transition">LinkedIn</a></li>
-							<li><a href="#" class="hover:text-blue-400 transition">Twitter</a></li>
+							<li><a href={socialLinks.github} target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition"><SocialIcon name="github" />GitHub</a></li>
+							<li><a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition"><SocialIcon name="linkedin" />LinkedIn</a></li>
+							<li><a href={socialLinks.x} target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition"><SocialIcon name="x" />X (Twitter)</a></li>
+							<li><a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition"><SocialIcon name="facebook" />Facebook</a></li>
 						</ul>
 					</div>
 					<div>
 						<h4 class="font-semibold mb-4 text-slate-200">Contact</h4>
-						<p class="text-sm text-slate-400">hello@aaronjaylev.com</p>
+						<a href={`mailto:${person.email}`} class="text-sm text-slate-400 hover:text-blue-400 transition">{person.email}</a>
 					</div>
 				</div>
 				<div class="border-t border-slate-800 pt-8">
-					<p class="text-center text-slate-500 text-sm">&copy; 2026 Aaron Jay Lev. All rights reserved.</p>
+					<p class="text-center text-slate-500 text-sm">&copy; 2026 Aaron Jay Lev. All rights reserved. · <a href="/privacy" class="hover:text-blue-400 transition">Privacy Policy</a> · <a href="/terms" class="hover:text-blue-400 transition">Terms of Use</a> · <a href="/ccpa" class="hover:text-blue-400 transition">CCPA Notice</a> · <a href="/dmca" class="hover:text-blue-400 transition">DMCA</a></p>
+					<p class="text-center text-slate-500 text-sm mt-2">
+						I built this website using my favorite tools, Astro and Tailwind CSS, and you can even 
+						<a href={websiteRepo} target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition"> view the code on GitHub</a>.
+					</p>
 				</div>
 			</div>
 		</footer>

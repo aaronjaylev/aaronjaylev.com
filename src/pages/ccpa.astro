@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { person } from '../config/site';
+
+const lastUpdated = 'October 10, 2026';
+---
+
+<Layout title="CCPA Notice" description="California Consumer Privacy Act notice for aaronjaylev.com, including your rights and how to make a request.">
+	<main class="max-w-3xl mx-auto px-4 py-20">
+		<h1 class="text-4xl md:text-5xl font-bold mb-4">California Privacy Notice (CCPA)</h1>
+		<p class="text-slate-400 mb-12">Last updated: {lastUpdated}</p>
+
+		<div class="space-y-10 text-slate-300 leading-relaxed">
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Overview</h2>
+				<p>
+					This notice supplements the <a href="/privacy" class="text-purple-400 hover:text-purple-300 transition">Privacy Policy</a> and applies to California residents under the California Consumer Privacy Act, as amended by the California Privacy Rights Act (together, the "CCPA"). It describes the categories of personal information collected on aaronjaylev.com (the "Site"), why it is collected, and the rights you have over it.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Personal Information We Collect</h2>
+				<div class="overflow-x-auto">
+					<table class="w-full text-left text-sm border border-slate-700">
+						<thead class="bg-slate-900/50 text-slate-200">
+							<tr>
+								<th class="p-3 border-b border-slate-700">Category (CCPA)</th>
+								<th class="p-3 border-b border-slate-700">Examples on this Site</th>
+								<th class="p-3 border-b border-slate-700">Collected?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="p-3 border-b border-slate-800">Identifiers</td>
+								<td class="p-3 border-b border-slate-800">IP address; Google Analytics cookie identifiers; your email address if you write to me</td>
+								<td class="p-3 border-b border-slate-800">Yes</td>
+							</tr>
+							<tr>
+								<td class="p-3 border-b border-slate-800">Internet or other electronic network activity</td>
+								<td class="p-3 border-b border-slate-800">Pages viewed, time on page, referring page, and links clicked</td>
+								<td class="p-3 border-b border-slate-800">Yes</td>
+							</tr>
+							<tr>
+								<td class="p-3 border-b border-slate-800">Geolocation data</td>
+								<td class="p-3 border-b border-slate-800">Approximate location derived from IP address (city or region level)</td>
+								<td class="p-3 border-b border-slate-800">Yes, approximate only</td>
+							</tr>
+							<tr>
+								<td class="p-3 border-b border-slate-800">Internet or device information</td>
+								<td class="p-3 border-b border-slate-800">Browser type, operating system, device type, screen size</td>
+								<td class="p-3 border-b border-slate-800">Yes</td>
+							</tr>
+							<tr>
+								<td class="p-3 border-b border-slate-800">Sensitive personal information</td>
+								<td class="p-3 border-b border-slate-800">None</td>
+								<td class="p-3 border-b border-slate-800">No</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="mt-4">The Site does not collect personal information through forms, accounts, or purchases.</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Sources and Purposes</h2>
+				<p>
+					Personal information is collected directly from you when you email me, and automatically from your browser through Google Analytics and standard server logs. It is used to measure and improve the Site and to respond to your messages. It is not used to build profiles for advertising.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Sale and Sharing</h2>
+				<p>
+					I do not sell personal information, and I do not share personal information for cross-context behavioral advertising. I have not sold or shared personal information of consumers under 16 years of age. Because the Site does not sell or share personal information, the "Do Not Sell or Share My Personal Information" opt-out does not apply to it.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Disclosures to Service Providers</h2>
+				<p>
+					Personal information is disclosed to the following service providers, which process it on my behalf:
+				</p>
+				<ul class="list-disc pl-6 space-y-2 mt-4">
+					<li><strong class="text-slate-100">Google</strong>, for Google Analytics and Google Fonts.</li>
+					<li><strong class="text-slate-100">The Site's web hosting provider</strong>, which keeps standard server logs.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Retention</h2>
+				<p>
+					Analytics data is kept according to the retention settings in Google Analytics. Email correspondence is kept only as long as needed to respond to you.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Your Rights</h2>
+				<p>As a California resident, you have the right to:</p>
+				<ul class="list-disc pl-6 space-y-2 mt-4">
+					<li><strong class="text-slate-100">Know</strong> the categories and specific pieces of personal information collected about you.</li>
+					<li><strong class="text-slate-100">Delete</strong> personal information collected about you, subject to legal exceptions.</li>
+					<li><strong class="text-slate-100">Correct</strong> inaccurate personal information.</li>
+					<li><strong class="text-slate-100">Opt out</strong> of the sale or sharing of personal information. (The Site does not sell or share it.)</li>
+					<li><strong class="text-slate-100">Limit</strong> the use of sensitive personal information. (The Site does not collect it.)</li>
+					<li><strong class="text-slate-100">Not be discriminated against</strong> for exercising any of these rights.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">How to Submit a Request</h2>
+				<p>
+					Send your request by email to <a href={`mailto:${person.email}`} class="text-purple-400 hover:text-purple-300 transition">{person.email}</a> with the subject line "CCPA Request" and the type of request you are making (know, delete, or correct). I may ask you to confirm your identity before I act on a request, and I will respond within 45 days. If more time is needed, I will tell you why and how long it will take.
+				</p>
+				<p class="mt-4">
+					You may also use an authorized agent to make a request on your behalf. I may ask the agent for proof of authorization and may ask you to verify your identity directly.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Changes to This Notice</h2>
+				<p>
+					I may update this notice from time to time. The "Last updated" date at the top shows when it was last changed.
+				</p>
+			</section>
+		</div>
+	</main>
+</Layout>

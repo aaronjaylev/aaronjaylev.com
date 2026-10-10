@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { person, websiteRepo } from '../config/site';
+
+const lastUpdated = 'October 10, 2026';
+---
+
+<Layout title="Terms of Use" description="The terms that govern your use of aaronjaylev.com.">
+	<main class="max-w-3xl mx-auto px-4 py-20">
+		<h1 class="text-4xl md:text-5xl font-bold mb-4">Terms of Use</h1>
+		<p class="text-slate-400 mb-12">Last updated: {lastUpdated}</p>
+
+		<div class="space-y-10 text-slate-300 leading-relaxed">
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Agreement to These Terms</h2>
+				<p>
+					These Terms of Use ("Terms") govern your access to and use of aaronjaylev.com (the "Site"), which is operated by {person.name}. By using the Site, you agree to these Terms. If you do not agree, please do not use the Site.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Purpose of the Site</h2>
+				<p>
+					The Site is a personal portfolio and resume. It is provided for information only. Nothing on the Site is an offer of employment, a contract, or a consulting engagement. Any engagement is governed only by a separate written agreement signed by both parties.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Intellectual Property</h2>
+				<p>
+					Unless stated otherwise, the text, design, and photographs on the Site are owned by {person.name} and protected by copyright law. You may view and print pages for personal reference, including downloading my resume. Please do not copy, republish, or redistribute the Site's content for commercial purposes without written permission.
+				</p>
+				<p class="mt-4">
+					The source code is published on <a href={websiteRepo} target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition">GitHub</a> so that it can be read. Viewing the code does not grant you a license to reuse it. If the repository does not include a license file, all rights are reserved.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Third-Party Trademarks and Screenshots</h2>
+				<p>
+					Company names, logos, and screenshots shown in the portfolio, including those of Regence, Lev Tech Corp, Shopify-based stores, and other clients and employers, belong to their respective owners. They appear only to describe past work. Their appearance on the Site does not mean that those companies endorse me or this Site.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Accuracy of Information</h2>
+				<p>
+					I work to keep the Site accurate, but it may contain errors or outdated information. Figures such as years of experience, users served, and revenue results describe work done in past roles and projects. They are summaries, not guarantees of future results. Please verify any information that matters to a decision by contacting me directly.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Links to Other Websites</h2>
+				<p>
+					The Site links to third-party websites, including LinkedIn, X, GitHub, and client sites. I do not control those sites and am not responsible for their content, policies, or practices. Linking to them does not mean I endorse them.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Acceptable Use</h2>
+				<p>When using the Site, you agree not to:</p>
+				<ul class="list-disc pl-6 space-y-2 mt-4">
+					<li>Attempt to gain unauthorized access to the Site, its servers, or its underlying systems.</li>
+					<li>Interfere with the Site's operation, including by overloading or disrupting its hosting.</li>
+					<li>Scrape or copy the Site at a volume that burdens its hosting, or use it to train systems without permission.</li>
+					<li>Use the Site or its content to misrepresent yourself or to imply a relationship with me that does not exist.</li>
+					<li>Use the Site for any unlawful purpose.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Disclaimer of Warranties</h2>
+				<p>
+					The Site is provided "as is" and "as available," without warranties of any kind, express or implied. I do not warrant that the Site will be uninterrupted, secure, or free of errors or harmful components.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Limitation of Liability</h2>
+				<p>
+					To the fullest extent permitted by law, {person.name} is not liable for any indirect, incidental, special, or consequential damages arising from your use of the Site, including damages from reliance on its content.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Governing Law</h2>
+				<p>
+					These Terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-law rules. Any dispute arising from these Terms or your use of the Site will be brought exclusively in the state or federal courts located in Orange County, Florida.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Changes to These Terms</h2>
+				<p>
+					I may update these Terms from time to time. Changes take effect when posted on this page. The "Last updated" date at the top shows when they last changed. Continued use of the Site after a change means you accept the updated Terms.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="text-2xl font-semibold text-slate-100 mb-3">Contact</h2>
+				<p>
+					Questions about these Terms can be sent to <a href={`mailto:${person.email}`} class="text-purple-400 hover:text-purple-300 transition">{person.email}</a>.
+				</p>
+			</section>
+		</div>
+	</main>
+</Layout>
