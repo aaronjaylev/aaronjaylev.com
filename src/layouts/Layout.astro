@@ -6,9 +6,11 @@ import SocialIcon from '../components/SocialIcon.astro';
 interface Props {
 	title: string;
 	description?: string;
+	image?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, image = '/img/aaron-lev-headshot-square.png' } = Astro.props;
+const shareImage = `https://aaronjaylev.com${image}`;
 
 const personSchema = {
 	'@context': 'https://schema.org',
@@ -62,11 +64,11 @@ const personSchema = {
 		<meta property="og:description" content={description || "Full Stack AI Engineer with 20+ years of experience building scalable web platforms and AI automation systems. Expert in React, Node.js, Claude API, and healthcare SaaS."} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://aaronjaylev.com" />
-		<meta property="og:image" content="https://aaronjaylev.com/img/aaron-lev-headshot.jpg" />
+		<meta property="og:image" content={shareImage} />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={`${title} | Aaron Jay Lev - Full Stack AI Engineer`} />
 		<meta name="twitter:description" content={description || "Full Stack AI Engineer with 20+ years of experience building scalable web platforms and AI automation systems."} />
-		<meta name="twitter:image" content="https://aaronjaylev.com/img/aaron-lev-headshot.jpg" />
+		<meta name="twitter:image" content={shareImage} />
 		<link rel="canonical" href="https://aaronjaylev.com" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
